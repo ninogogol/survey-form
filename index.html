@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Pizzeria Pozzuoli</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <h1 id="title">Pizzeria Pozzuoli</h1>
+    <p id="description"><span>Thank you for taking the time to give us your feedback</span></p>
+    <form id="survey-form">
+        <fieldset>
+            <label id="name-label">Name<input id="name" type="text" placeholder="Enter your name" required></label>
+            <label id="email-label">Email<input id="email" type="email" placeholder="Enter your Email" required></label>
+            <label id="number-label">Phone<span>(optional)</span> <input id="number" type="number" placeholder="Phone" min="13" max="120" ></label>
+        </fieldset>
+        
+        <fieldset>
+            <p>What Pizza did you order?</p>
+            <select id="dropdown">
+                <option value="">(select one)</option>
+                <option value="1">Marinara</option>
+                <option value="2">Margherita</option>
+                <option value="3">Diavola</option>
+                <option value="4">Salame Dolce</option>
+                <option value="5">Other</option>
+            </select>
+        </fieldset>
+        
+        <fieldset>
+            <p>Would you recommend our Pizza to a friend?</p>
+            <label><input class="inline" name="recommendation" type="radio" value="1">Definitely</label>
+            <label><input class="inline" name="recommendation" type="radio" value="2">Maybe</label>
+            <label><input class="inline" name="recommendation" type="radio" value="3">Not sure</label>
+        </fieldset>
+        
+        <fieldset>
+            <p>Which Pizza did you already taste?<span>(Check all that apply)</span> </p>
+            <label><input class="inline" value="1" type="checkbox"/>COTTO E FUNGHI</label>
+            <label><input class="inline" value="2" type="checkbox"/>PROVOLA E PEPE</label>
+            <label><input class="inline" value="3" type="checkbox"/>MARE E TERRA</label>
+            <label><input class="inline" value="4" type="checkbox"/>TONNO</label>
+            <label><input class="inline" value="5" type="checkbox"/>CAPRICCIO</label>
+            <label><input class="inline" value="6" type="checkbox"/>RIPIENO</label>
+            <label><input class="inline" value="7" type="checkbox"/>4 STAGIONI</label>
+            <label><input class="inline" value="8" type="checkbox"/>SALSICCIA</label>
+            <label><input class="inline" value="9" type="checkbox"/>BUFALINA</label>
+            <label><input class="inline" value="10" type="checkbox"/>PROSCIUTTO E RUCOLA</label>
+            <label><input class="inline" value="11" type="checkbox"/>PUTEOLI</label>
+        </fieldset>
+        
+        <fieldset>
+            <p>Any comments or suggestions?</p>
+            <label><textarea placeholder="Enter your comment here..."></textarea></label>
+            <input id="submit" type="submit"/>    
+        </fieldset>
+    </form>
+</html>
